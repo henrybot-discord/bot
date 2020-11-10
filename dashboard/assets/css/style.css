@@ -1,0 +1,51 @@
+.MainHeading {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  top: 50%;
+}
+
+.outName {
+  margin: 4px 10px;
+  height: 70px;
+  background-color: #a6a1a1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.inName {
+  max-height: 50px;
+  position: relative;
+  background-color: #757272;
+  color: white;
+  right: 10px;
+  border-radius: 4px;
+  width: 55%;
+}
+
+.column {
+  width: 25%;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.row {
+  margin: 0 -5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
