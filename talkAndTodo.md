@@ -3,8 +3,8 @@
 - [x] Get mongodb
 - [x] revamp command handler
 - [ ] fix many bugs
-- [ ] get oauth done
-- [ ] add commands
+- [:white_check_mark:] get oauth done
+- [ ] economy commands
 
 ===============================
 

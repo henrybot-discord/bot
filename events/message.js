@@ -1,9 +1,9 @@
-const Timeout = new Set()
-const ms = require('ms')
+const Timeout = new Set();
+const ms = require("ms");
 
 module.exports = {
-    run: async (client, msg) => {
-        const GuildSettings = require("../models/settings");
+  run: async (client, msg) => {
+    const GuildSettings = require("../models/settings");
         // Retriving the guild settings from database.
         var storedSettings = await GuildSettings.findOne({ gid: msg.guild.id });
         if (!storedSettings) {
@@ -35,7 +35,7 @@ module.exports = {
           if (command){
             if(command.timeout) {
               if(Timeout.has(`${msg.author.id}${command.name}`)) {
-                return msg.channel.send(`Slow down! You have ${ms(command.timeout)} until you can run this command.`).then(async (e) => {
+                return msg.channel.send(`Slow down! You have ${ms(command.timeout, { long: true })} until you can run this command.`).then(async (e) => {
                   await e.delete({ timeout: 7500 })
                 })
               } else {

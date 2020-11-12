@@ -7,7 +7,7 @@ module.exports = {
   usage: 'work',
   access: 'Everyone',
   aliases: ["w"],
-  timeout: 1800000, // Timeout (30 mins) :) :D
+  timeout: 600000, // Timeout (10 mins) :) :D
   run: async(client,msg,args) => {
     const jobs = ['Youtuber', 'Programmer', "Doctor", 'Fast Food Worker', 'Mechanic', 'Builder', 'Nurse']
     const job = jobs[Math.floor(Math.random() * (jobs.length))]
