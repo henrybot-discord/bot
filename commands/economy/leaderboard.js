@@ -60,9 +60,9 @@ module.exports = {
           let name = msg.guild.members.cache.get(res[i].userId) || "User left the server."
           
           if(name === "User left the server.") {
-            embed.addField(`${i + 1}. ${name}`, `**Coins**: ${res[i].coins}`)
+            embed.addField(`${i + 1}. ${name} **Coins**: ${res[i].coins}`)
           } else {
-            embed.addField(`${i + 1}. ${name.user.username}`, `**Coins**: ${res[i].coins.toLocaleString()}`)
+            embed.addField(`${i + 1}. ${name.user.username} **Coins**: ${res[i].coins.toLocaleString()}`)
           }
         }
       }

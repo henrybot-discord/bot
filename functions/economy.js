@@ -59,4 +59,5 @@ module.exports.addCoins = async (guildId, userId, coins) => {
   });
 };
 
+
 // Notes and functions made by chomp :)

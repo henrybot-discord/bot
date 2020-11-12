@@ -155,14 +155,13 @@ module.exports = async client => {
     renderTemplate(res, req, "index.ejs");
   });
 
-  // About endpoint
-  app.get("/about", (req, res) => {
-    renderTemplate(res, req, "about.ejs");
-  });
-
   // Dashboard endpoint.
   app.get("/dashboard", checkAuth, (req, res) => {
     renderTemplate(res, req, "dashboard.ejs", { perms: Discord.Permissions });
+  });
+
+  app.use((req, res) => {
+    res.status(404).sendFile(__dirname + "/templates/404page.html"); 
   });
 
   // Settings endpoint.
