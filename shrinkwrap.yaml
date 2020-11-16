@@ -1,6 +1,7 @@
 dependencies:
   ascii-table: 0.0.9
   body-parser: 1.19.0
+  danbot-hosting: 0.1.6
   discord.js: 12.4.1
   dotenv: 8.2.0
   ejs: 3.1.5
@@ -190,6 +191,12 @@ packages:
     dev: false
     resolution:
       integrity: sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
+  /danbot-hosting/0.1.6:
+    dependencies:
+      node-fetch: 2.6.1
+    dev: false
+    resolution:
+      integrity: sha512-O1ikNWddMwZk1ItfxC+NShYNfUtlAoj7Bum0ruccxVPCQjJLajlyy/3HBdBrCxXY9ua2Xa32DK90P+JjPHnGzg==
   /debug/2.6.9:
     dependencies:
       ms: 2.0.0
@@ -989,6 +996,7 @@ shrinkwrapVersion: 3
 specifiers:
   ascii-table: ^0.0.9
   body-parser: ^1.19.0
+  danbot-hosting: ^0.1.5
   discord.js: ^12.4.0
   dotenv: ^8.2.0
   ejs: ^3.1.5

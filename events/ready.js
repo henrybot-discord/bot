@@ -6,6 +6,7 @@ module.exports = {
     client.user.setActivity(`henry help | ${client.users.cache.size} users`, {
       type: "LISTENING"
     });
+    
     client.on("error", console.error);
     client.on("warn", console.warn);
 
