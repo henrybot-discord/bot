@@ -27,7 +27,8 @@
     "mongoose": "^5.10.11",
     "node-os-utils": "^1.3.2",
     "os": "^0.1.1",
-    "ms": "^2.1.2"
+    "ms": "^2.1.2",
+    "danbot-hosting": "^0.1.5"
   },
   "engines": {
     "node": "12.x"

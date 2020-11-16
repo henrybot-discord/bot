@@ -160,8 +160,13 @@ module.exports = async client => {
     renderTemplate(res, req, "dashboard.ejs", { perms: Discord.Permissions });
   });
 
+  // Error 404 and 500 endpoints
   app.use((req, res) => {
     res.status(404).sendFile(__dirname + "/templates/404page.html"); 
+  });
+  
+  app.use((req, res) => {
+    res.status(500).sendFile(__dirname + "/templates/500page.html"); 
   });
 
   // Settings endpoint.

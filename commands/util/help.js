@@ -1,6 +1,7 @@
 const prefix = process.env.PREFIX; //hello
 const fs = require("fs");
 const { MessageEmbed } = require("discord.js");
+
 function cap(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
